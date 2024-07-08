@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+
+    background-color: #4f5b62;
+}
+
+h1, h2, h2, label {
+    font-family: 'Roboto', sans-serif;
+    /* Dark grey color */
+    color: #4f5b62;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Media query for desktop */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 60%;
+        max-width: 600px;
+    }
+}
+
+/* Media query for tablet and mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: unset;
+        min-width: unset;
+    }
+}
+
+.row {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+/* Large form buttons */
+.btn-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.33;
+    border-radius: 0.5rem;
+    border: 3px solid #a6aaad;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #4f5b62;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-lg:hover {
+    /* background-color: #dbdfe3; */
+    border: 3px solid #4f5b62;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-red {
+    background-color: #e74c3c;
+    color: #fff;
+    border: 3px solid #e74c3c;
+}
+
+.btn-blue {
+    background-color: #3498db;
+    color: #fff;
+    border: 3px solid #3498db;
+}
+
+.btn-green {
+    background-color: #2ecc71;
+    color: #fff;
+    border: 3px solid #2ecc71;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type="file"] {
+    font-size: 1.4rem;
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+#file {
+    border: 3px solid #3498db;
+    padding: 1rem;
+}
+
+form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    background: #3498db;
+    width: fit-content;
+    color: #fff;
+}
+
+.message {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background-color: #d9edf7;
+}
+
+.message.error {
+    /* error Alert Message background colour*/
+    background-color: #f2dede;
+}
